@@ -31,8 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          path: xiaovy.comic.web
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -53,6 +51,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
+          path: xiaovy.comic.web
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           working-directory: xiaovy.comic.web
