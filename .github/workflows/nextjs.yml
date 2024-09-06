@@ -51,10 +51,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          path: xiaovy.comic.web
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          working-directory: xiaovy.comic.web
+          cache-dependency-path: ${{ github.workspace }}/xiaovy.comic.web/package.json
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
