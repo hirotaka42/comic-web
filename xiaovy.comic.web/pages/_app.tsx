@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import { reset } from 'styled-reset'
-import type { AppProps } from 'next/app'
+import { createGlobalStyle } from 'styled-components';
+import { reset } from 'styled-reset';
+import type { AppProps } from 'next/app';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
       background: black;
     }
   }
-`
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -43,8 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <Component {...pageProps} />
     </>
-  )
-  
+  );
 }
 
-export default MyApp
+export default MyApp;
