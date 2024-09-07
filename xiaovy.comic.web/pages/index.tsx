@@ -1,11 +1,44 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import {
+  CssBaseline,
+  Button,
+  Checkbox,
+  Container,
+  FormControlLabel,
+  FormGroup,
+  Paper,
+} from '@mui/material';
 
 const Home: NextPage = () => {
   return (
     <>
-      <p>Hello</p>
+      <CssBaseline />
+      <Container>
+        <Paper elevation={3} sx={{ p: 5 }}>
+          <h1 className={styles.title}>Welcome to Material UI!</h1>
+          <FormGroup>
+            <FormControlLabel
+              control={<Checkbox defaultChecked />}
+              label="Label"
+            />
+            <FormControlLabel
+              required
+              control={<Checkbox />}
+              label="Required"
+            />
+            <FormControlLabel
+              disabled
+              control={<Checkbox />}
+              label="Disabled"
+            />
+          </FormGroup>
+          <hr />
+          <Button variant="contained" color="primary">
+            ボタン
+          </Button>
+        </Paper>
+      </Container>
     </>
   );
 };
