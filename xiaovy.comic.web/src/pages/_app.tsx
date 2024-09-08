@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function ComicWebApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
@@ -8,4 +8,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default ComicWebApp;
