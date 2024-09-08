@@ -45,6 +45,12 @@
   font-size: 4rem;
 }
 
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .title,
 .description {
   text-align: center;
