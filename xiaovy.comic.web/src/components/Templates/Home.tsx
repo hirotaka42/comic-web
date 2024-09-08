@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 import {
-  CssBaseline,
   Button,
   Checkbox,
   Container,
@@ -10,10 +9,9 @@ import {
   Paper,
 } from '@mui/material';
 
-const Home: NextPage = () => {
+const HomeComponents: NextPage = () => {
   return (
     <>
-      <CssBaseline />
       <Container>
         <Paper elevation={3} sx={{ p: 5 }}>
           <h1 className={styles.title}>Welcome to Material UI!</h1>
@@ -43,4 +41,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomeComponents;
