@@ -8,7 +8,7 @@ export const ComicHome: React.FC = () => {
       {/* 上部の大きな画像 */}
       <Box sx={{ position: 'relative', height: '400px', width: '100%' }}>
         <Image
-          src="/img/etc/sample00.webp" // パスを直接指定
+          src="https://github.com/user-attachments/assets/9cbaba22-9af2-4732-bfd0-0c0d8350980e" // パスを直接指定
           alt="MainPR image"
           layout="fill" // 親要素に対して幅と高さを100%にする
           objectFit="cover" // アスペクト比を維持しつつ、コンテナ全体をカバー
