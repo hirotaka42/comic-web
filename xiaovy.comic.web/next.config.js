@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-const prefixPath = !isProd ? '/comic-web' : ''
+const prefixPath = isProd ? '/comic-web' : ''
 
 const nextConfig = {
   reactStrictMode: true,

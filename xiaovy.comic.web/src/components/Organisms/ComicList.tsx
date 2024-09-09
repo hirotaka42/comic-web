@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import { ComicCard } from '../Molecules/ComicCard';
+import { ComicCard } from '@components/Molecules/ComicCard';
 
 const comics = [
   {
