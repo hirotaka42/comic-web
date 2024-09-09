@@ -1,17 +1,19 @@
 import { Box, ButtonGroup, Button } from '@mui/material';
 import { ComicList } from '../Organisms/ComicList';
 import Image from 'next/image';
-import PRimage00 from '@assets/etc/sample00.webp';
-import { basePath } from '@../next.config';
-const BASE_PATH = basePath ? basePath : '';
+import PRimage00 from '../../assets/etc/sample00.webp';
+import { basePath } from '../../../next.config';
 
 export const ComicHome: React.FC = () => {
+  console.log('ComicHome' + PRimage00.src);
+  console.log('ComicHome' + PRimage00.blurDataURL);
+  console.log('basePath' + basePath);
   return (
     <Box>
       {/* 上部の大きな画像 */}
       <Box sx={{ position: 'relative', height: '400px', width: '100%' }}>
         <Image
-          src={`${BASE_PATH}/sample00.webp`}
+          src={PRimage00.src}
           alt="MainPR image"
           layout="fill" // 親要素に対して幅と高さを100%にする
           objectFit="cover" // アスペクト比を維持しつつ、コンテナ全体をカバー

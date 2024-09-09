@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-const prefixPath = !isProd ? '/comic-web' : ''
 
 const nextConfig = {
   reactStrictMode: true,
@@ -9,8 +8,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: prefixPath,
-  basePath: prefixPath,
+  basePath: isProd ? '/comic-web' : '',
+
 }
 
 module.exports = nextConfig
